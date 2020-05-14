@@ -546,7 +546,7 @@ div.card:hover
 }
 h2 span
   {
-    font-size:2em;
+    font-size:1em;
  }
 .content
 {
@@ -614,6 +614,4 @@ div.card:hover
   position: relative;
   margin:auto;
 }
-}
-
 }
