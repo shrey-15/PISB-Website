@@ -3,6 +3,11 @@ body {
   overflow-x: hidden;
 }
 
+/* 
+* {
+  border: 2px solid red;
+} */
+
 .untitled {
   position: relative;
   height: 100%;
@@ -953,7 +958,7 @@ header {
 }
 
 div {
-  display: inline-block;
+  /* display: inline-block; */
 }
 
 .benefit {
