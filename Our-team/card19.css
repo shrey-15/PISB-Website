@@ -1,0 +1,493 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+/* .heading-row {
+    max-width: 100%;
+    justify-content: center;
+} */
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+  
+body {
+  color: #37474F;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  background-color: #333;
+  /* overflow-x: hidden; */
+}
+  
+h1, h2, h3 {
+  font-weight: 200;
+}
+
+.d-flex {
+    margin-top: 30px;
+}
+
+.heading {
+    
+    color: #fff;
+    font-size: 58px;
+    position: relative;
+    /* top: 2%; */
+    /* left: 40%; */
+    /* transform: translateX(-50%); */
+    font-family: 'Josefin Sans', sans-serif;
+    /* font-family: 'Roboto Slab', serif; */
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: center;
+    /* margin-right: 40px; */
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+ 
+ 
+
+  .dropdown {
+    /* margin-top: 80px; */
+    text-align: left;
+    color: #fff;
+    font-size: 30px;
+    position: relative;
+    
+    /* top: 5%;
+    left: 25%; */
+    /* transform: translateX(-50%); */
+    /* font-family: 'Roboto Slab', serif; */
+    font-family: 'Josefin Sans', sans-serif;
+   /* text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: center; */
+    /* margin-bottom: 30px; */
+    /* max-width: 100%; */
+
+
+    /* position: relative; Enable absolute positioning for children and pseudo elements */
+    /* width: 200px;
+    padding: 10px; */
+    
+   
+    outline: none;
+    cursor: pointer;
+
+    /* Font settings */
+    font-weight: bold;
+  }
+
+/* select */
+select {
+  /* left: 50%; */
+ -webkit-appearance: none;
+ -moz-appearance: none;
+ -ms-appearance: none;
+ appearance: none;
+ outline: 0;
+ box-shadow: none;
+ border: 0 !important;
+ /* background: #2c3e50; */
+ background-color: transparent;
+ background-image: none;
+}
+/* Remove IE arrow */
+select::-ms-expand {
+ display: flex-box;
+}
+/* Custom Select */
+.select {
+ position: relative;
+ display: flex;
+ width: 8em;
+ height: 2em;
+ line-height: 2;
+ /* background: #2c3e50; */
+ background: transparent;
+ overflow: hidden;
+ border-radius: .25em;
+}
+select {
+ flex: 1;
+ padding: 0 .5em;
+ color: rgb(20, 19, 19);
+ cursor: pointer;
+}
+/* Arrow */
+.select::after {
+ content: '\25BC';
+ position: absolute;
+ top: 0;
+ right: 0;
+ padding: 0 1em;
+ /* background: #34495e; */
+ background: transparent;
+ cursor: pointer;
+ pointer-events: none;
+ -webkit-transition: .25s all ease;
+ -o-transition: .25s all ease;
+ transition: .25s all ease;
+}
+/* Transition on select*/
+.select:hover::after {
+ color: #f39c12;
+
+}
+
+  option {
+      background: #000;
+}
+
+/* tabs */
+.tab {
+    overflow: hidden;
+    /* border: 1px solid #000; */
+    /* border-radius: 80px; */
+    background-color:transparent;
+    color: #fff;
+    padding-left: 80px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    /* background-color: inherit; */
+    /* background-color: #000; */
+    background-color: transparent;
+    float: left;
+    border: 5px groove transparent;
+    border-bottom: 5px solid #fff;
+    /* border-radius: 80px; */
+    outline: none;
+    cursor: pointer;
+    padding: 14px 20px;
+    transition: 0.3s;
+    font-size: 30px;
+    /* text-decoration: underline; */
+    /* width: 200px; */
+    /* font-family: 'Roboto Slab', serif; */
+    font-family: 'Noto Sans JP', sans-serif;
+    margin-left: 6rem;
+    }
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: rgb(216, 216, 216);
+}
+
+/* Create an active/current tablink class */
+/* .tab button:active {
+    background-color: #ccc;
+} */
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 50px 12px;
+    /* top: -20%; */
+
+}
+
+.teamTitle {
+    /* top: -10%; */
+    margin-bottom: 80px;
+    
+}
+.teamTitle h1 {
+  font-family: 'Noto Sans JP', sans-serif;
+  /* font-family: 'Roboto Slab', serif; */
+  text-align: center;
+  font-weight: 500;
+  color: #fff;
+  font-size: 40px;
+  /* text-decoration: underline; */
+  letter-spacing: 4px;
+}
+
+
+
+
+
+
+    /**** Sass Variables Card Styling ****/
+/* * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  } */
+  
+  /* body {
+    font-family: "Open Sans", sans-serif;
+    background: #333;
+  }
+   */
+  /* .container {
+    max-width: 900px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+  }
+   */
+   .card-wrapper {
+    width: 350px;
+    height: 500px;
+    position: relative;
+    margin-left: 55px;
+  }
+  
+  .card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 350px;
+    height: 450px;
+    transform: translate(-50%, -50%);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+.card-image {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      background-color: #000;
+      transition: .5s;
+}
+    
+.card-image:hover img {
+      opacity: 0.4;
+      transition: .5s;
+    }
+  
+  .card:hover .card-image {
+    transform: translateY(-100px);
+    transition: all .9s;
+  }
+  
+  /**** Social Icons *****/
+  
+.social-icons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    display: flex;
+  }
+    
+.social-icons li {
+      list-style: none;
+}
+      
+.social-icons li a {
+  border-radius: 50%;
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #fff;
+    font-size: 23px;
+    color: #333;
+    font-weight: bold;
+    margin: 0 6px;
+    transition: .4s;
+    transform: translateY(200px);
+    opacity: 0;
+} 
+
+.social-icons li a i {
+  padding: 10px;
+}
+    
+  
+  .card:hover .social-icons li a {
+    transform: translateY(0px);
+    opacity: 1; 
+  }
+  
+  .social-icons li a:hover {
+    background: #000; 
+    transition: .2s;
+  }
+  .social-icons li a:hover .fab {
+      color: #fff;
+  } 
+
+  .social-icons li a:hover .fas {
+    color: #fff;
+}
+  
+  .social-icons li a .fab {
+    transition: .8s; }
+
+  .social-icons li a .fas {
+      transition: .8s; }
+      
+.social-icons li a .fab:hover {
+    /* transform: rotateY(360deg); */
+    color: #fff;
+}
+
+.social-icons li a .fas:hover {
+  /* transform: rotateY(360deg); */
+  color: #fff;
+} 
+ 
+  
+  .card:hover li:nth-child(1) a {
+      transition-delay: 0.1s;
+  }
+  .card:hover li:nth-child(2) a {
+    transition-delay: 0.2s;
+  }
+  
+  /**** Personal Details ****/
+  
+.details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    height: 180px;
+    z-index: 1;
+    padding: 10px; 
+}
+  
+  .details h2 {
+      margin: 80px 0;
+      padding: 0;
+      text-align: center;
+}
+       
+  .details .job-title {
+          font-size: 3rem;
+          line-height: 1.5rem;
+          color: #333;
+          font-weight: 300;
+}
+
+
+ @media screen and (min-width:320px) and (max-width:560px) {
+    .d-flex {
+        justify-content: start;
+    }
+    .heading {
+        margin-right:2px;
+        font-size: 30px;
+        letter-spacing: 1px;
+    }
+    .dropdown {
+        font-size: 20px;
+        width: 70%;
+    }
+    .tab {
+        padding-left: 2px;
+        }
+    .tab button {
+        /* float: left; */
+        border: 2px groove transparent;
+        border-bottom: 2px solid #fff;
+        padding: 10px 10px;
+        margin-left: 0;
+        font-size: 15px;
+        font-family: 'Noto Sans JP', sans-serif;
+        justify-self: start;
+        align-items: center;
+        margin-left: 2rem;
+        }
+        .teamTitle h1 {
+           font-weight: 200;
+           color: #fff;
+           font-size: 30px;
+           letter-spacing: 4px;
+        }
+
+        .card-wrapper {
+          width: 300px;
+          height: 500px;
+          position: relative;
+        }
+        
+        .card {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 300px;
+          height: 450px;
+          transform: translate(-50%, -50%);
+          border-radius: 16px;
+          overflow: hidden;
+          box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
+          cursor: pointer;
+          transition: 0.5s;
+        }
+  }
+
+  @media screen and (min-width:840px) and (max-width:1280px) {
+    .heading {
+      font-size: 55px;
+      letter-spacing: 4px;
+       }
+  .dropdown {
+      font-size: 20px;
+      width: 100%;
+       } 
+    select {
+      flex: 0.5;
+      max-width: 100%;
+    }
+    #team {
+      padding-top: 30px;
+    }
+    .card-wrapper {
+      width: 340px;
+      height: 500px;
+      position: relative;
+      margin-left: 10px;
+    }
+    .tab {
+      padding-left: 60px;
+    }
+      } 
+
+      @media screen and (min-width:560px) and (max-width:840px) {
+        .heading {
+          font-size: 55px;
+          letter-spacing: 4px;
+           }
+      .dropdown {
+          font-size: 20px;
+          width: 100%;
+           } 
+        select {
+          flex: 0.5;
+          max-width: 100%;
+        }
+        #our {
+          padding-top: 30px;
+        }
+        #team {
+          padding-top: 30px;
+        }
+        .card-wrapper {
+          width: 300px;
+          height: 500px;
+          position: relative;
+          margin-left: 20px;
+        }
+        .tab {
+          padding-left: 40px;
+        }
+          } 
+
+ 
+

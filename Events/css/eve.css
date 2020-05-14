@@ -1,0 +1,194 @@
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+video {
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+  } */
+
+@media (pointer: coarse) and (hover: none) {
+
+  /* header {
+      background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+    }
+    header video {
+      display: none;
+    } */
+  header video {
+    width: 100%;
+  }
+}
+
+/* img {
+    border-radius: 50%;
+  } */
+/*   
+  #head{
+    text-align: center;
+  }
+  
+  h3{
+    padding-top: 2rem;
+  }
+  
+  #eve{
+    padding: 50px;
+  } */
+/* hover animation */
+/* .column::after {
+      content: '';
+      clear: both;
+      display: block;
+  } */
+
+/* collapsible divs */
+/* .collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: #555;
+  }
+  
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  } */
+
+#pad {
+  /* margin-left: 0rem;
+    margin-right: 0rem; */
+}
+
+#eve {
+  padding: 50px;
+  margin: 1rem;
+
+}
+
+#evelogo {
+  padding: 1rem;
+}
+
+p {
+  padding: 20px;
+}
+
+/* logo  */
+#logoe {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+#logoe:hover {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
+
+#leftallign {
+  margin-left: 2rem;
+}
+
+/* sub events logo */
+#sublogo {
+  margin-left: 10px;
+}
+
+#maincont {
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  .container-fluid {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .imglink {
+    order: 1;
+  }
+
+  .cont {
+    order: 2;
+  }
+
+  /* .three { order: 3; }
+    .two { order: 4; }
+    .one { order: 5 } */
+
+  #pad {
+    margin-left: 0rem;
+  }
+
+  #eve {
+    padding: 0px;
+    margin: 1rem;
+  }
+
+  #evelogo {
+    padding: 0.2rem;
+  }
+
+  p {
+    padding: 5px;
+  }
+}

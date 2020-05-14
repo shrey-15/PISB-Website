@@ -1,0 +1,269 @@
+/* * {
+    border: 1px solid red;
+} */
+
+.col {
+    padding: 0 1vw;
+}
+
+#heading {
+    font-size: 7vh;
+    line-height: 10vh;
+    height: 10vh;
+    background: black;
+    color: white;
+    letter-spacing: 2vw;
+    align-items: center;
+}
+
+/* ! -----------------------MAIN DOMAIN------------------ */
+
+
+#main-domain {
+    position: relative;
+    height: 40vw;
+}
+
+/* ?------------CARD 1 OR TITLE CARDS------------ */
+.card-1 {
+    position: absolute;
+    background-color: rgb(124, 133, 133);
+    height: 30vw;
+    width: 22vw;
+    z-index: 100;
+    left: 3%;
+    border-radius: 0 40px 40px 0;
+    transition: all 0.2s;
+    /* display: none; */
+}
+
+.doms {
+    background-color: rgb(124, 133, 133);
+    height: 16.5vw;
+    width: 12vw;
+    border-radius: 0 40px 40px 0;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.card1-active {
+    /* animation: card1Collapse 3s; */
+}
+
+.title-card {
+    background: rgb(167, 167, 167);
+    border-radius: 6px;
+    padding: 2vw;
+    color: rgb(10, 10, 10);
+    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.card__image-container {
+    margin: -2rem -2rem 1rem -2rem;
+}
+
+.card__image {
+    opacity: 0;
+    height: 18.5vw;
+    animation: ImageFadeIn .8s 1.4s forwards;
+}
+
+.dom__image {
+    opacity: 0;
+    height: 9vw;
+    animation: ImageFadeIn .8s 1.4s forwards;
+}
+
+.card__title {
+    color: rgb(41, 41, 41);
+    margin-top: 1vw;
+    font-weight: 800;
+    letter-spacing: 0.01em;
+    font-size: 2vw;
+}
+
+.dom__title {
+    color: rgb(41, 41, 41);
+    margin: 1vw 0;
+    font-weight: 800;
+    letter-spacing: 0.01em;
+    font-size: 1vw;
+    width: fit-content;
+}
+
+.card__content {
+    margin-top: -1rem;
+    opacity: 0;
+    animation: ContentFadeIn .8s 1.6s forwards;
+}
+
+
+@keyframes ContentFadeIn {
+    0% {
+        transform: translateY(-1rem);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes ImageFadeIn {
+    0% {
+        transform: translate(-0.5rem, -0.5rem) scale(1.05);
+        opacity: 0;
+        filter: blur(10px);
+    }
+
+    50% {
+        opacity: 1;
+        filter: blur(4px);
+    }
+
+    100% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+        filter: blur(0px);
+    }
+}
+
+/* ?------------CARD 2------------ */
+
+
+.card-2 {
+    position: absolute;
+    background-color: rgb(12, 15, 13);
+    height: 25vw;
+    width: 72vw;
+    z-index: 5;
+    transition: all 0.2s;
+
+}
+
+.mycol1 {
+    width: 50%;
+}
+
+.card2-content {
+    height: 20vw;
+    transition: all 0.2s;
+}
+
+#hidden-col1 {
+    width: 5vw;
+}
+
+#text-content {
+    color: white;
+    overflow-y: hidden;
+    max-height: 25vw;
+    font-size: 1vw;
+    margin: 3vw 1vw;
+}
+
+#image-content {
+    padding: 2vw 2vw 2vw 2vw;
+}
+
+#image-content:before {
+    content: "";
+    background: rgb(243, 240, 240);
+    position: absolute;
+    left: 0;
+    top: 0vw;
+    height: 17vw;
+    width: 2px;
+}
+
+#card2-buttons {
+    height: 4vw;
+    transition: all 0.2s;
+
+
+}
+
+#event {
+    width: 4vw;
+    height: 2vw;
+    font-size: 1vw;
+    padding: 0.2vw;
+}
+
+#achievement {
+    width: 8vw;
+    height: 2vw;
+    font-size: 1vw;
+    padding: 0.2vw;
+}
+
+
+.card2-active {
+    /* animation: card2Collapse 1.0s; */
+}
+
+.add-invisible {
+    /* animation: contentFade 3s; */
+}
+
+
+@keyframes contentFade {
+    0% {
+        opacity: 1;
+        /* filter: blur(0px); */
+    }
+
+    20%,
+    90% {
+        opacity: 0;
+        /* filter: blur(10px); */
+    }
+
+    100% {
+        opacity: 1;
+        /* filter: blur(0px); */
+    }
+}
+
+
+@keyframes card2Collapse {
+    20% {
+        transform: scaleX(1);
+        right: 0%;
+    }
+
+
+    100% {
+        transform: scaleX(0.35);
+        right: 5%;
+    }
+}
+
+
+@keyframes card1Collapse {
+    20% {
+        left: 3%;
+    }
+
+    30%,
+    60% {
+        left: 30%;
+    }
+
+    100% {
+        left: 3%;
+    }
+}
+
+/* ! -----------------------ALL DOMAINS------------------ */
+
+#all-domains {
+    height: 19vw;
+    background-color: rgb(20, 20, 20);
+}
+
+.domains {
+    padding: 1vw;
+}

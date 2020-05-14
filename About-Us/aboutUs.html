@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+
+	<!-- <meta name="description" content="A slice reveal effect that shows animated slices between image transitions" />
+		<meta name="keywords" content="reveal, slices, effect, animation, css, web development, web design" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="favicon.ico"> -->
+
+	<!--script src="//tympanus.net/codrops/adpacks/analytics.js"></script-->
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>About Us</title>
+	<meta name="description" content="A slice reveal effect that shows animated slices between image transitions" />
+	<meta name="keywords" content="reveal, slices, effect, animation, css, web development, web design" />
+	<meta name="author" content="Codrops" />
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/base.css" />
+	<link rel="stylesheet" type="text/css" href="css/uncover.css" />
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&display=swap">
+	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+		integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+	<link rel="stylesheet" href="assets/css/animate.css">
+	<link rel="stylesheet" href="assets/css/barstyle.css">
+
+	<link rel="stylesheet" href="assets/css/media-queries.css">
+
+	<!-- Favicon and touch icons -->
+	<link rel="shortcut icon" href="assets/ico/favicon.png">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+
+
+	<script>
+		document.documentElement.className = "js";
+		var supportsCssVars = function () {
+			var e, t = document.createElement("style");
+			return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window
+				.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e
+		};
+		supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
+	</script>
+	<!--script src="//tympanus.net/codrops/adpacks/analytics.js"></script-->
+
+</head>
+
+<body class="demo-3 loading">
+	<div class="wrapper">
+
+		<!-- Sidebar -->
+		<nav class="sidebar">
+
+			<!-- close sidebar menu -->
+			<div class="dismiss">
+				<i class="fas fa-arrow-left"></i>
+			</div>
+
+			<div class="logo">
+				<h3><a href="../Home/homepage.html"></a></h3>
+			</div>
+
+			<ul class="list-unstyled menu-elements">
+				<li>
+					<a class="dropdown-toggle" data-toggle="collapse" aria-expanded="false" href="#AboutUs"
+						role="button" aria-controls="AboutUs"><i class="fas fa-user"></i> About us</a>
+					<ul class="collapse list-unstyled" id="AboutUs">
+						<li><a href="aboutUs.html#ieee-div">IEEE</a></li>
+						<li><a href="aboutUs.html#pisb-div">PISB</a></li>
+						<li><a href="aboutUs.html#ping-div">PING</a></li>
+						<li><a href="aboutUs.html#wie-div">WIE</a></li>
+						<li><a href="aboutUs.html#csi-div">CSI</a></li>
+					</ul>
+				</li>
+				<li>
+					<a class="dropdown-toggle" data-toggle="collapse" aria-expanded="false" href="#Events" role="button"
+						aria-controls="Events"><i class="fas fa-puzzle-piece"></i>Events</a>
+					<ul class="collapse list-unstyled" id="Events">
+						<li><a href="../Events/events.html#credenz">Credenz</a></li>
+						<li><a href="../Events/events.html#ctd">CTD</a></li>
+						<li><a href="../Events/events.html#seminar">Seminars</a></li>
+						<li><a href="../Events/events.html#sig">SIGs</a></li>
+						<li><a href="../Events/events.html#workshop">Workshops</a></li>
+					</ul>
+				</li>
+				<li>
+					<a class="dropdown-toggle" data-toggle="collapse" aria-expanded="false" href="#Achieve"
+						role="button" aria-controls="Achieve"><i class="fas fa-trophy"></i> Achievements</a>
+					<ul class="collapse list-unstyled" id="Achieve">
+						<li><a href="../Achievements/achievements.html#projects-div">Projects</a></li>
+						<li><a href="../Achievements/achievements.html#hackathons-div">Hackathons</a></li>
+						<li><a href="../Achievements/achievements.html#research-div">Research Papers</a></li>
+						<li><a href="../Achievements/achievements.html#awards-div">Awards</a></li>
+					</ul>
+				</li>
+
+				<li>
+					<a href="../Our-team/card20.html"><i class="fas fa-users"></i>Meet Our Team</a>
+				</li>
+				<li>
+					<a href="../Domains-Page/domains.html"><i class="fas fa-globe"></i>Domains</a>
+				</li>
+				<li>
+					<a href="#"><i class="fas fa-camera-retro"></i>Gallery</a>
+				</li>
+				<li>
+					<a href="#"><i class="fas fa-pencil-alt"></i>Join Us</a>
+				</li>
+				<li>
+					<a href="../Home/homepage.html#contactUs-div"><i class="fas fa-phone"></i> Contact us</a>
+				</li>
+
+			</ul>
+
+			<div class="dark-light-buttons">
+				<a class="btn btn-primary btn-customized-4 btn-customized-dark" href="#" role="button">Dark</a>
+				<a class="btn btn-primary btn-customized-4 btn-customized-light" href="#" role="button">Light</a>
+			</div>
+
+		</nav>
+		<!-- End sidebar -->
+		<!-- Dark overlay -->
+		<div class="overlay"></div>
+
+		<!-- Content -->
+		<div class="content">
+
+			<!-- open sidebar menu -->
+			<a class="btn btn-primary btn-customized open-menu" href="#" role="button">
+				<i class="fas fa-align-justify"></i><span>Menu</span>
+			</a>
+		</div>
+	</div>
+
+	<main>
+		<div class="container">
+			<section id="aboutus">
+
+				<div class="row">
+					<div class="col-sm-12">
+						<h2 class="text-center msg">Message From Branch Councellor </h2>
+					</div>
+					<div class="col-sm-7 cont">
+						<p data-aos="zoom-in" data-aos-duration="1500">Lorem ipsum dolor sit amet consectetur
+							adipisicing elit. Quod, voluptatem ut? Cupiditate accusantium rem modi ab esse, ex eum
+							debitis, quae quia, odit in perspiciatis! Architecto molestias tenetur, rem magni facilis
+							deserunt veniam rerum ea eaque cumque nulla corporis facere in totam, dolores odit illo
+							repellendus sapiente fugiat! Neque illum ipsa inventore dicta, dolore voluptate explicabo ex
+							nulla dolorum possimus, magnam obcaecati, doloremque alias! Obcaecati corporis excepturi
+							optio placeat explicabo nesciunt commodi rerum enim inventore corrupti nihil debitis
+							repellat molestias possimus, fugit facere nemo. Quisquam ex nihil ducimus laboriosam cumque
+							qui dignissimos quo repellat, non itaque maiores. Vitae, fuga? Perspiciatis!</p>
+						<p data-aos="zoom-in" data-aos-duration="1500">Lorem ipsum dolor sit amet, consectetur
+							adipisicing elit. Possimus fugit cumque eligendi in dolore animi officia ab reiciendis
+							fugiat repellendus ut soluta consequatur pariatur ullam iusto, quos quibusdam architecto,
+							nulla sunt dolorum nihil nisi consequuntur ratione. Ex, omnis nobis! Quae error dolore cum
+							ducimus, doloribus provident repellendus eligendi ut nisi totam illo ipsam alias nulla odit.
+							Maxime accusamus harum facere, repudiandae delectus unde aliquid sapiente? Quod eos
+							voluptates distinctio voluptatem accusantium praesentium earum, ratione omnis deleniti
+							delectus molestias ea rerum dolores id maxime vitae enim cupiditate iusto aliquid et nisi
+							labore officiis. Ad tenetur at nam magnam consequuntur vitae pariatur!</p>
+						<p data-aos="zoom-in" data-aos-duration="1500">Lorem ipsum dolor sit amet consectetur
+							adipisicing elit. Quam aliquid adipisci perferendis cumque dolore porro, eligendi aut modi
+							sint explicabo vitae, voluptate eum saepe accusamus, voluptatum quas obcaecati amet ipsum.
+							Sapiente itaque soluta ducimus modi nihil facere cupiditate temporibus. Sequi aspernatur
+							cumque modi repudiandae doloremque, ratione delectus neque odio nisi in enim consequuntur
+							aliquam, optio numquam quae architecto animi mollitia, explicabo illo fugiat. Distinctio a
+							doloribus vitae. Molestiae, minima iste? Libero necessitatibus quos ipsa pariatur. Sapiente,
+							alias architecto doloremque ducimus laboriosam reprehenderit necessitatibus assumenda rerum
+							qui maxime aperiam est veritatis deleniti atque eos mollitia accusamus natus repellat? Nemo,
+							expedita excepturi?</p>
+					</div>
+					<div class="col-sm-5 imglink">
+						<div class="img-wrap">
+							<img src="img/Chris-Pine.jpg" alt="">
+						</div>
+					</div>
+				</div>
+				<hr>
+
+			</section>
+
+			<section>
+				<div class="row">
+					<div class="col-sm-12">
+						<h2 class="text-center abt">ABOUT US</h2>
+					</div>
+				</div>
+
+				<div class="row" id="ieee-div">
+					<div class="col-sm-6">
+						<div class="content grid">
+							<div class="grid__item">
+								<div class="scroll-img" style="background-image: url(img/19.jpg);"></div>
+								<div class="grid__item-titlewrap">
+									<h2 class="grid__item-title">#IEEE</h2>
+									<p class="grid__item-description">Technology is best when it brings people together.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 grid">
+						<p data-aos="zoom-in-up" data-aos-duration="1000">Lorem ipsum dolor sit amet consectetur
+							adipisicing elit. Tenetur, possimus! Voluptatum consequatur modi quibusdam necessitatibus
+							vitae quam porro officiis magnam officia. Officiis aspernatur quas cupiditate at eum
+							provident maxime odio ipsam magni necessitatibus. Eos officiis quos cum fugit non labore
+							repudiandae, minus praesentium. Amet molestias quos voluptatum mollitia nam sunt
+							consequuntur libero ut sit similique excepturi id, unde fuga, maxime ullam ad harum debitis.
+							Porro culpa excepturi commodi, explicabo quidem alias a, illo eum esse unde ipsa id vitae in
+							nesciunt exercitationem deleniti, accusantium inventore laborum? Repellendus aperiam amet
+							corrupti dolorem quisquam assumenda quo, cupiditate, ex vero modi numquam similique.
+						</p>
+					</div>
+				</div>
+
+
+				<div class="row" id="pisb-div">
+					<div class="col-sm-6 grid cont">
+						<p data-aos="fade-left" data-aos-duration="1500">Lorem ipsum dolor sit amet consectetur
+							adipisicing elit. Tenetur, possimus! Voluptatum consequatur modi quibusdam necessitatibus
+							vitae quam porro officiis magnam officia. Officiis aspernatur quas cupiditate at eum
+							provident maxime odio ipsam magni necessitatibus. Eos officiis quos cum fugit non labore
+							repudiandae, minus praesentium. Amet molestias quos voluptatum mollitia nam sunt
+							consequuntur libero ut sit similique excepturi id, unde fuga, maxime ullam ad harum debitis.
+							Porro culpa excepturi commodi, explicabo quidem alias a, illo eum esse unde ipsa id vitae in
+							nesciunt exercitationem deleniti, accusantium inventore laborum? Repellendus aperiam amet
+							corrupti dolorem quisquam assumenda quo, cupiditate, ex vero modi numquam similique.
+						</p>
+					</div>
+					<div class="col-sm-6 imglink">
+						<div class="content grid">
+							<div class="grid__item">
+								<div class="scroll-img" style="background-image: url(img/12.jpg);"></div>
+								<div class="grid__item-titlewrap">
+									<h2 class="grid__item-title">#PISB</h2>
+									<p class="grid__item-description">The Web as I envisaged it, we have not seen it
+										yet.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="row" id="ping-div">
+					<div class="col-sm-6">
+						<div class="content grid">
+							<div class="grid__item">
+								<div class="scroll-img" style="background-image: url(img/13.jpg);"></div>
+								<div class="grid__item-titlewrap">
+									<h2 class="grid__item-title">#PING</h2>
+									<p class="grid__item-description">Our technology forces us to live mythically.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 grid">
+						<p data-aos="fade-right" data-aos-duration="1500">Lorem ipsum dolor sit amet consectetur
+							adipisicing elit. Tenetur, possimus! Voluptatum consequatur modi quibusdam necessitatibus
+							vitae quam porro officiis magnam officia. Officiis aspernatur quas cupiditate at eum
+							provident maxime odio ipsam magni necessitatibus. Eos officiis quos cum fugit non labore
+							repudiandae, minus praesentium. Amet molestias quos voluptatum mollitia nam sunt
+							consequuntur libero ut sit similique excepturi id, unde fuga, maxime ullam ad harum debitis.
+							Porro culpa excepturi commodi, explicabo quidem alias a, illo eum esse unde ipsa id vitae in
+							nesciunt exercitationem deleniti, accusantium inventore laborum? Repellendus aperiam amet
+							corrupti dolorem quisquam assumenda quo, cupiditate, ex vero modi numquam similique.
+						</p>
+					</div>
+				</div>
+
+				<div class="row" id="wie-div">
+					<div class="col-sm-6 grid cont">
+						<p data-aos="fade-down" data-aos-duration="1500">Lorem ipsum dolor sit amet consectetur
+							adipisicing elit. Tenetur, possimus! Voluptatum consequatur modi quibusdam necessitatibus
+							vitae quam porro officiis magnam officia. Officiis aspernatur quas cupiditate at eum
+							provident maxime odio ipsam magni necessitatibus. Eos officiis quos cum fugit non labore
+							repudiandae, minus praesentium. Amet molestias quos voluptatum mollitia nam sunt
+							consequuntur libero ut sit similique excepturi id, unde fuga, maxime ullam ad harum debitis.
+							Porro culpa excepturi commodi, explicabo quidem alias a, illo eum esse unde ipsa id vitae in
+							nesciunt exercitationem deleniti, accusantium inventore laborum? Repellendus aperiam amet
+							corrupti dolorem quisquam assumenda quo, cupiditate, ex vero modi numquam similique.
+						</p>
+					</div>
+					<div class="col-sm-6 imglink">
+						<div class="content grid">
+							<div class="grid__item">
+								<div class="scroll-img" style="background-image: url(img/14.jpg);"></div>
+								<div class="grid__item-titlewrap">
+									<h2 class="grid__item-title">#WIE</h2>
+									<p class="grid__item-description">The human spirit must prevail over technology.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row" id="csi-div">
+					<div class="col-sm-6">
+						<div class="content grid">
+							<div class="grid__item">
+								<div class="scroll-img" style="background-image: url(img/15.jpg);"></div>
+								<div class="grid__item-titlewrap">
+									<h2 class="grid__item-title">#CSI</h2>
+									<p class="grid__item-description">The great myth of our times is that technology is
+										communication.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 grid">
+						<p data-aos="fade-down" data-aos-duration="1500">Lorem ipsum dolor sit amet consectetur
+							adipisicing elit. Tenetur, possimus! Voluptatum consequatur modi quibusdam necessitatibus
+							vitae quam porro officiis magnam officia. Officiis aspernatur quas cupiditate at eum
+							provident maxime odio ipsam magni necessitatibus. Eos officiis quos cum fugit non labore
+							repudiandae, minus praesentium. Amet molestias quos voluptatum mollitia nam sunt
+							consequuntur libero ut sit similique excepturi id, unde fuga, maxime ullam ad harum debitis.
+							Porro culpa excepturi commodi, explicabo quidem alias a, illo eum esse unde ipsa id vitae in
+							nesciunt exercitationem deleniti, accusantium inventore laborum? Repellendus aperiam amet
+							corrupti dolorem quisquam assumenda quo, cupiditate, ex vero modi numquam similique.
+						</p>
+					</div>
+				</div>
+				<!-- <div class="grid__item">
+					<div class="scroll-img" style="background-image: url(img/16.jpg);"></div>
+					<div class="grid__item-titlewrap">
+						<h2 class="grid__item-title">#less</h2>
+						<p class="grid__item-description">Timeless manners count</p>
+					</div>
+				</div>
+				<div class="grid__item">
+					<div class="scroll-img" style="background-image: url(img/17.jpg);"></div>
+					<div class="grid__item-titlewrap">
+						<h2 class="grid__item-title">#only</h2>
+						<p class="grid__item-description">Together we can sit</p>
+					</div>
+				</div>
+				<div class="grid__item">
+					<div class="scroll-img" style="background-image: url(img/18.jpg);"></div>
+					<div class="grid__item-titlewrap">
+						<h2 class="grid__item-title">#need</h2>
+						<p class="grid__item-description">The new kid on the block</p>
+					</div>
+				</div>
+				<div class="grid__item">
+					<div class="scroll-img" style="background-image: url(img/11.jpg);"></div>
+					<div class="grid__item-titlewrap">
+						<h2 class="grid__item-title">#feed</h2>
+						<p class="grid__item-description">The new kid on the block</p>
+					</div>
+				</div> -->
+		</div>
+		</section>
+	</main>
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+	<script src="js/anime.min.js"></script>
+	<script src="js/uncover.js"></script>
+	<script src="js/demo3.js"></script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script src="assets/js/jquery-3.3.1.min.js"></script>
+	<script src="assets/js/jquery-migrate-3.0.0.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+	</script>
+	<script src="assets/js/jquery.backstretch.min.js"></script>
+	<script src="assets/js/wow.min.js"></script>
+	<script src="assets/js/jquery.waypoints.min.js"></script>
+	<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="assets/js/scripts.js"></script>
+	<script>
+		AOS.init();
+	</script>
+</body>
+
+</html>

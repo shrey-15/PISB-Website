@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Achievements</title>
+	<meta char="utf-8">
+	<meta name="viewport" content="width-device-width,initial-scale=1">
+
+
+	<link rel="stylesheet" href="nav/assets/css/jquery.mCustomScrollbar.min.css">
+	<link rel="stylesheet" href="nav/assets/css/animate.css">
+
+	<!-- These two links are causing problem -->
+	<link rel="stylesheet" href="nav/assets/css/barstyle.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+
+	<link rel="stylesheet" href="nav/assets/css/media-queries.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+		integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&display=swap">
+	<!-- Favicon and touch icons -->
+	<link rel="shortcut icon" href="nav/assets/ico/favicon.png">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="nav/assets/ico/apple-touch-icon-144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="nav/assets/ico/apple-touch-icon-114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="nav/assets/ico/apple-touch-icon-72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="nav/assets/ico/apple-touch-icon-57-precomposed.png">
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+
+	<link rel="stylesheet" href="styles.css">
+
+	<link rel="stylesheet" href="swiper.min.css">
+	<link rel="stylesheet" href="spinkit.min.css">
+
+
+
+</head>
+
+<body>
+	<div class="wrapper">
+
+		<!-- Sidebar -->
+		<nav class="sidebar">
+
+			<!-- close sidebar menu -->
+			<div class="dismiss">
+				<i class="fas fa-arrow-left"></i>
+			</div>
+
+			<div class="logo">
+				<h3><a href="#"></a></h3>
+			</div>
+
+			<ul class="list-unstyled menu-elements">
+				<li>
+					<a class="dropdown-toggle" data-toggle="collapse" aria-expanded="false" href="#AboutUs"
+						role="button" aria-controls="AboutUs"><i class="fas fa-user"></i> About us</a>
+					<ul class="collapse list-unstyled" id="AboutUs">
+						<li><a href="aboutUs.html#ieee-div">IEEE</a></li>
+						<li><a href="aboutUs.html#pisb-div">PISB</a></li>
+						<li><a href="aboutUs.html#ping-div">PING</a></li>
+						<li><a href="aboutUs.html#wie-div">WIE</a></li>
+						<li><a href="aboutUs.html#csi-div">CSI</a></li>
+					</ul>
+				</li>
+				<li>
+					<a class="dropdown-toggle" data-toggle="collapse" aria-expanded="false" href="#Events" role="button"
+						aria-controls="Events"><i class="fas fa-puzzle-piece"></i>Events</a>
+					<ul class="collapse list-unstyled" id="Events">
+						<li><a href="../Events/events.html#credenz">Credenz</a></li>
+						<li><a href="../Events/events.html#ctd">CTD</a></li>
+						<li><a href="../Events/events.html#seminar">Seminars</a></li>
+						<li><a href="../Events/events.html#sig">SIGs</a></li>
+						<li><a href="../Events/events.html#workshop">Workshops</a></li>
+					</ul>
+				</li>
+				<li>
+					<a class="dropdown-toggle" data-toggle="collapse" aria-expanded="false" href="#Achieve"
+						role="button" aria-controls="Achieve"><i class="fas fa-trophy"></i> Achievements</a>
+					<ul class="collapse list-unstyled" id="Achieve">
+						<li><a href="../Achievements/achievements.html#projects-div">Projects</a></li>
+						<li><a href="../Achievements/achievements.html#hackathons-div">Hackathons</a></li>
+						<li><a href="../Achievements/achievements.html#research-div">Research Papers</a></li>
+						<li><a href="../Achievements/achievements.html#awards-div">Awards</a></li>
+					</ul>
+				</li>
+
+				<li>
+					<a href="../Our-team/card20.html"><i class="fas fa-users"></i>Meet Our Team</a>
+				</li>
+				<li>
+					<a href="../Domains-Page/domains.html"><i class="fas fa-globe"></i>Domains</a>
+				</li>
+				<li>
+					<a href="#"><i class="fas fa-camera-retro"></i>Gallery</a>
+				</li>
+				<li>
+					<a href="#"><i class="fas fa-pencil-alt"></i>Join Us</a>
+				</li>
+				<li>
+					<a href="../Home/homepage.html#contactUs-div"><i class="fas fa-phone"></i> Contact us</a>
+				</li>
+
+			</ul>
+
+			<div class="dark-light-buttons">
+				<a class="btn btn-primary btn-customized-4 btn-customized-dark" href="#" role="button">Dark</a>
+				<a class="btn btn-primary btn-customized-4 btn-customized-light" href="#" role="button">Light</a>
+			</div>
+
+		</nav>
+		<!-- End sidebar -->
+		<!-- Dark overlay -->
+		<div class="overlay"></div>
+
+		<!-- Content -->
+		<div class="content">
+
+			<!-- open sidebar menu -->
+			<a class="btn btn-primary btn-customized open-menu" href="#" role="button">
+				<i class="fas fa-align-justify"></i><span>Menu</span>
+			</a>
+		</div>
+	</div>
+	<div class="parallax">
+		<h2 class="Effect"> ACHIEVEMENTS:
+			<span class="type"></span>
+			<!--<span>C</span>
+			<span>H</span>
+			<span>I</span>
+			<span>E</span>
+			<span>V</span>
+			<span>E</span>
+			<span>M</span>
+			<span>E</span>
+			<span>N</span>
+			<span>T</span>
+			<span>S</span>-->
+		</h2>
+	</div>
+
+	<section class="Competition" id="competition-div">
+		<div class="fade">
+			<h1>STUDENTS OF PICT IEEE - COMPETITIONS.</h1>
+			<h3>COMPETITION NAME 1.</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+				dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+				ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+				fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+				deserunt mollit anim id est laborum.
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+				dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+				ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+				fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+				deserunt mollit anim id est laborum.
+			</p>
+		</div>
+	</section>
+
+	<section class="parallax1">
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div class="card">
+						<div class="sliderText">
+							<h2>Slide One</h2>
+						</div>
+						<div class="content">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+								incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+								exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							</p>
+							<a href="#">Read More</a>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="card">
+						<div class="sliderText">
+							<h2>Slide Two</h2>
+						</div>
+						<div class="content">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+								incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+								exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							</p>
+							<a href="#">Read More</a>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="card">
+						<div class="sliderText">
+							<h2>Slide Three</h2>
+						</div>
+						<div class="content">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+								incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+								exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							</p>
+							<a href="#">Read More</a>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="card">
+						<div class="sliderText">
+							<h2>Slide Four</h2>
+						</div>
+						<div class="content">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+								incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+								exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							</p>
+							<a href="#">Read More</a>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="card">
+						<div class="sliderText">
+							<h2>Slide Five</h2>
+						</div>
+						<div class="content">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+								incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+								exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							</p>
+							<a href="#">Read More</a>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="card">
+						<div class="sliderText">
+							<h2>Slide Six</h2>
+						</div>
+						<div class="content">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+								incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+								exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							</p>
+							<a href="#">Read More</a>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="card">
+						<div class="sliderText">
+							<h2>Slide Seven</h2>
+						</div>
+						<div class="content">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+								incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+								exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							</p>
+							<a href="#">Read More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+		</div>
+	</section>
+
+	<section class="Projects" id="projects-div">
+		<div class="fade">
+			<h1>STUDENTS OF PICT IEEE - PROJECTS</h1>
+			<h3>PROJECT NAME 1.</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+				dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+				ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+				fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+				deserunt mollit anim id est laborum.
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+				dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+				ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+				fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+				deserunt mollit anim id est laborum.
+			</p>
+		</div>
+	</section>
+
+	<section class="parallax1">
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div class="card">
+						<div class="sliderText">
+							<h2>Slide One</h2>
+						</div>
+						<div class="content">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+								incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+								exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							</p>
+							<a href="#">Read More</a>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="card">
+						<div class="sliderText">
+							<h2>Slide Two</h2>
+						</div>
+						<div class="content">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+								incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+								exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							</p>
+							<a href="#">Read More</a>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="card">
+						<div class="sliderText">
+							<h2>Slide Three</h2>
+						</div>
+						<div class="content">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+								incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+								exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							</p>
+							<a href="#">Read More</a>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="card">
+						<div class="sliderText">
+							<h2>Slide Four</h2>
+						</div>
+						<div class="content">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+								incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+								exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							</p>
+							<a href="#">Read More</a>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="card">
+						<div class="sliderText">
+							<h2>Slide Five</h2>
+						</div>
+						<div class="content">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+								incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+								exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							</p>
+							<a href="#">Read More</a>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="card">
+						<div class="sliderText">
+							<h2>Slide Six</h2>
+						</div>
+						<div class="content">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+								incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+								exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							</p>
+							<a href="#">Read More</a>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="card">
+						<div class="sliderText">
+							<h2>Slide Seven</h2>
+						</div>
+						<div class="content">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+								incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+								exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							</p>
+							<a href="#">Read More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+		</div>
+	</section>
+	<section class="Hackathons" id="hackathons-div">
+		<div class="fade">
+			<h1>STUDENTS OF PICT IEEE - HACKATHONS</h1>
+			<h3>HACKATHON NAME 1.</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+				dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+				ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+				fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+				deserunt mollit anim id est laborum.
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+				dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+				ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+				fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+				deserunt mollit anim id est laborum.
+			</p>
+		</div>
+	</section>
+
+	<section class="parallax1">
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div class="card">
+						<div class="sliderText">
+							<h2>Slide One</h2>
+						</div>
+						<div class="content">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+								incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+								exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							</p>
+							<a href="#">Read More</a>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="card">
+						<div class="sliderText">
+							<h2>Slide Two</h2>
+						</div>
+						<div class="content">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+								incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+								exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							</p>
+							<a href="#">Read More</a>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="card">
+						<div class="sliderText">
+							<h2>Slide Three</h2>
+						</div>
+						<div class="content">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+								incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+								exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							</p>
+							<a href="#">Read More</a>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="card">
+						<div class="sliderText">
+							<h2>Slide Four</h2>
+						</div>
+						<div class="content">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+								incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+								exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							</p>
+							<a href="#">Read More</a>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="card">
+						<div class="sliderText">
+							<h2>Slide Five</h2>
+						</div>
+						<div class="content">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+								incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+								exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							</p>
+							<a href="#">Read More</a>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="card">
+						<div class="sliderText">
+							<h2>Slide Six</h2>
+						</div>
+						<div class="content">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+								incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+								exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							</p>
+							<a href="#">Read More</a>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="card">
+						<div class="sliderText">
+							<h2>Slide Seven</h2>
+						</div>
+						<div class="content">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+								incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+								exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							</p>
+							<a href="#">Read More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+		</div>
+	</section>
+	<section class="Research" id="research-div">
+		<div class="fade">
+			<h1>STUDENTS OF PICT IEEE - RESEARCH PAPERS</h1>
+			<h3>RESEARCH PAPERS NAME 1.</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+				dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+				ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+				fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+				deserunt mollit anim id est laborum.
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+				dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+				ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+				fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+				deserunt mollit anim id est laborum.
+			</p>
+		</div>
+	</section>
+
+	<section class="parallax1">
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div class="card">
+						<div class="sliderText">
+							<h2>Slide One</h2>
+						</div>
+						<div class="content">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+								incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+								exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							</p>
+							<a href="#">Read More</a>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="card">
+						<div class="sliderText">
+							<h2>Slide Two</h2>
+						</div>
+						<div class="content">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+								incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+								exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							</p>
+							<a href="#">Read More</a>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="card">
+						<div class="sliderText">
+							<h2>Slide Three</h2>
+						</div>
+						<div class="content">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+								incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+								exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							</p>
+							<a href="#">Read More</a>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="card">
+						<div class="sliderText">
+							<h2>Slide Four</h2>
+						</div>
+						<div class="content">
+							<p data-text="Animation">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+								incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+								exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							</p>
+							<a href="#">Read More</a>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="card">
+						<div class="sliderText">
+							<h2>Slide Five</h2>
+						</div>
+						<div class="content">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+								incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+								exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							</p>
+							<a href="#">Read More</a>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="card">
+						<div class="sliderText">
+							<h2>Slide Six</h2>
+						</div>
+						<div class="content">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+								incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+								exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							</p>
+							<a href="#">Read More</a>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="card">
+						<div class="sliderText">
+							<h2>Slide Seven</h2>
+						</div>
+						<div class="content">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+								incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+								exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							</p>
+							<a href="#">Read More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+		</div>
+	</section>
+	<section class="Awards" id="awards-div">
+		<div class="fade">
+			<h1>PICT IEEE STUDENT BRANCH - AWARDS</h1>
+			<h3>AWARD NAME ONE.</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+				dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+				ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+				fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+				deserunt mollit anim id est laborum.
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+				dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+				ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+				fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+				deserunt mollit anim id est laborum.
+			</p>
+		</div>
+	</section>
+
+	<script src="swiper.min.js"></script>
+	<script>
+		var swiper = new Swiper('.swiper-container', {
+			effect: 'coverflow',
+			grabCursor: true,
+			centeredSlides: true,
+			slidesPerView: 'auto',
+			loop: true,
+			coverflowEffect: {
+				rotate: 0,
+				stretch: 330,
+				depth: 100,
+				modifier: 3,
+				slideShadows: false,
+			},
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+		});
+		/*pagination: '.swiper-pagination',
+		            paginationClickable: true,
+
+		            // AutoPlay
+		            autoplay: 10000,
+		            speed: 1500,
+		            watchSlidesProgress: true,
+		            watchVisibility: true,
+
+		            // Loop
+		            loop: true,
+		            loopAdditionalSlides: 2,
+		            loopedSlides: 2,
+
+		            // Position
+		            slidesPerView: 'auto', //If "auto" or slidesPerView > 1, enable watchSlidesVisibility for lazy load
+		            spaceBetween: 20,
+
+		            // Keyboard and Mousewheel
+		            keyboardControl: true,
+		            mousewheelControl: true,
+		            mousewheelForceToAxis: true, // just use the horizontal axis to 
+
+		            // Lazy Loading 
+		            watchSlidesVisibility: true,
+		            preloadImages: false,
+		            lazyLoading: true,
+
+
+		        })*/
+	</script>
+	<script src="scroll-out.js"></script>
+	<script src="typed.js"></script>
+	<script>
+		var typed = new Typed(".type", {
+			strings: [
+				"Projects",
+				"Competitions",
+				"Hackathons",
+				"Research Papers",
+				"Awards"
+			],
+			typeSpeed: 120,
+			backSpeed: 120,
+			loop: true
+		});
+	</script>
+	<script type="text/javascript">
+		ScrollOut({
+			targets: 'h3,h1,p'
+		})
+	</script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+	<script src="nav/assets/js/jquery-3.3.1.min.js"></script>
+	<script src="nav/assets/js/jquery-migrate-3.0.0.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+	</script>
+	<script src="nav/assets/js/jquery.backstretch.min.js"></script>
+	<script src="nav/assets/js/wow.min.js"></script>
+	<script src="nav/assets/js/jquery.waypoints.min.js"></script>
+	<script src="nav/assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="nav/assets/js/scripts.js"></script>
+</body>
+
+</html>
